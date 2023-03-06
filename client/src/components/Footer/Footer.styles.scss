@@ -9,79 +9,84 @@ footer {
     justify-content: space-between;
     font-size: 12px;
     img {
-      height: 50px;
+        height: 50px;
     }
-  }
 
-  //HOME
+    //HOME
 
-  .home {
-    .posts {
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      gap: 150px;
+    .home {
+        .posts {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 150px;
 
-      .post {
-        display: flex;
-        gap: 100px;
+            .post {
+                display: flex;
+                gap: 100px;
 
-        &:nth-child(2n + 1) {
-          flex-direction: row-reverse;
-        }
+                &:nth-child(2n + 1) {
+                    flex-direction: row-reverse;
+                }
 
-        .img {
-          flex: 2;
-          position: relative;
+                .img {
+                    flex: 2;
+                    position: relative;
 
-          &::after {
-            content: "";
-            width: 100%;
-            height: 100%;
-            background-color: $lightGreen;
-            position: absolute;
-            top: 20px;
-            left: -20px;
-            z-index: -1;
-          }
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        background-color: $lightGreen;
+                        position: absolute;
+                        top: 20px;
+                        left: -20px;
+                        z-index: -1;
+                    }
 
-          img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-          }
-        }
+                    img {
+                        width: 100%;
+                        max-height: 400px;
+                        object-fit: cover;
+                    }
+                }
 
-        .content {
-          flex: 3;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+                .content {
+                    flex: 3;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
 
-          h1 {
-            font-size: 48px;
-          }
+                    h1 {
+                        font-size: 48px;
+                    }
 
-          p {
-            font-size: 18px;
-          }
+                    p {
+                        font-size: 18px;
+                    }
 
-          button {
-            width: max-content;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            background-color: white;
-            border: 1px solid teal;
-            color: teal;
+                    button {
+                        width: max-content;
+                        padding: 10px 20px;
+                        border: none;
+                        cursor: pointer;
+                        background-color: white;
+                        border: 1px solid teal;
+                        color: teal;
 
-            &:hover {
-              border: 1px solid white;
-              background-color: $lightGreen;
-              color: black;
+                        &:hover {
+                            border: 1px solid white;
+                            background-color: $lightGreen;
+                            color: black;
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
+    font-size: 0.8rem;
+
+    img {
+        height: 4.5rem;
+    }
+}
